@@ -33,9 +33,9 @@
             <li>bonobash</li>
         </ul>
         </section>
-        <section>
-            <h1 id="fruits-title">Fruits i like</h1>
-            <ul class="fruits-container">
+        <section class="fruits-container">
+            <h1 id="fruits-title" class="some-class random-class blue-bg">Fruits i like</h1>
+            <ul>
                 <li>apple</li>
                 <li>banana</li>
                 <li>carrot</li>
@@ -79,7 +79,7 @@
         const someLi = document.querySelectorAll('.fruits-container li');
         // console.log(someLi);
         for (const li of someLi){
-            console.log(li.innerText);
+            // console.log(li.innerText);
         }
     </script>
 </body>
