@@ -1,31 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tour Of Dom</title>
     <link rel="stylesheet" href="style.css">
     <style>
-        li{
-            color: yellowgreen;
+        li {
+            color: tomato;
+        }
+        #fruits-title{
+            color: black;
         }
     </style>
 </head>
+
 <body>
     <header>
         <h1>Welcome to my DOM</h1>
     </header>
     <main>
-        <h1>My Awesome DOM de baba</h1>
+        <section>
+            <h1>My Awesome DOM de baba</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem, dolore. Laudantium voluptatibus necessitatibus tempore velit nobis. Ex hic illum provident in sequi possimus, deserunt repellat rem veritatis soluta quo sapiente.</p>
         <ul>
             <li>Jalali set</li>
             <li>Shafayet</li>
             <li>bonobash</li>
         </ul>
+        </section>
+        <section>
+            <h1 id="fruits-title">Fruits i like</h1>
+            <ul>
+                <li>apple</li>
+                <li>banana</li>
+                <li>carrot</li>
+            </ul>
+        </section>
+        <section>
+            <h1 id="places-title">Places i like to visit</h1>
+            <ul>
+                <li>Soondarban</li>
+                <li>bandorban</li>
+                <li>kataban</li>
+                <li>salban</li>
+            </ul>
+        </section>
     </main>
     <script src="js/hello.js"></script>
     <script>
-        console.log('Adding js inside the html file');
+        const liCollection = document.getElementsByTagName('li');
+        // console.log(liCollection);
+        for (const li of liCollection) {
+            console.log(li.innerText);
+        }
+        const allHeading = document.getElementsByTagName('h1');
+        for (const h1 of allHeading) {
+            console.log(h1.innerText);
+        }
     </script>
 </body>
+
 </html>
